@@ -1,7 +1,6 @@
 PhotoStackForMac
 =======
 
-a command line tool that convert the tiny images to a number of source code, such as Cocoa, Cocoa Touch...
 
 
 Contributing
