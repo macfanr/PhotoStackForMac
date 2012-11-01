@@ -87,6 +87,7 @@ void f(CALayer *_layer, CALayer *_superLayer)
 
 @interface DNPhotoStackView()
 
+@property (assign) CALayer *containerLayer;
 @property (assign) CALayer *touchedLayer;
 @property (assign) NSPoint touchedLocation;
 
@@ -130,12 +131,13 @@ void f(CALayer *_layer, CALayer *_superLayer)
         CGColorRef color = CGColorCreateGenericRGB(1, 1, 0, 1);
         container.borderColor = color; CGColorRelease(color);
 #endif
+        self.containerLayer = container;
         [self.layer addSublayer:container];
         
     });
 }
 
-- (CALayer*)photoContainerLayer {return [self.layer.sublayers lastObject];}
+- (CALayer*)photoContainerLayer {return [self containerLayer];}
 
 - (void)reloadData
 {
