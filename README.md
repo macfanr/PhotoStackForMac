@@ -1,6 +1,6 @@
 PhotoStackForMac
 =======
-
+an OS X cocoa class to create a stack of photos,which is the mac version for [IOS PhotoStack][2]
 
 
 Contributing
@@ -15,3 +15,4 @@ Contributing
 
 
 [1]: http://github.com/github/markup/pulls
+[2]: http://github.com/tomlongo/PhotoStack
